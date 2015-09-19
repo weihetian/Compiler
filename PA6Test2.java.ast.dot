@@ -1,0 +1,129 @@
+digraph ASTGraph {
+0 [ label="Program" ];
+1 [ label="MainClass" ];
+0 -> 1
+2 [ label="BlockStatement" ];
+1 -> 2
+3 [ label="CallStatement" ];
+2 -> 3
+4 [ label="NewExp" ];
+3 -> 4
+5 [ label="TopClassDecl" ];
+0 -> 5
+6 [ label="MethodDecl" ];
+5 -> 6
+7 [ label="VoidType" ];
+6 -> 7
+8 [ label="VarDecl" ];
+6 -> 8
+9 [ label="ColorArrayType" ];
+8 -> 9
+10 [ label="VarDecl" ];
+6 -> 10
+11 [ label="ByteType" ];
+10 -> 11
+12 [ label="AssignStatement" ];
+6 -> 12
+13 [ label="ByteCast" ];
+12 -> 13
+14 [ label="IntLiteral\n0" ];
+13 -> 14
+15 [ label="AssignStatement" ];
+6 -> 15
+16 [ label="NewArrayExp" ];
+15 -> 16
+17 [ label="ColorType" ];
+16 -> 17
+18 [ label="IntLiteral\n7" ];
+16 -> 18
+19 [ label="ArrayAssignStatement" ];
+6 -> 19
+20 [ label="IdLiteral\ncolors" ];
+19 -> 20
+21 [ label="IntLiteral\n0" ];
+19 -> 21
+22 [ label="ColorLiteral\nMeggy.Color.RED" ];
+19 -> 22
+23 [ label="ArrayAssignStatement" ];
+6 -> 23
+24 [ label="IdLiteral\ncolors" ];
+23 -> 24
+25 [ label="IntLiteral\n1" ];
+23 -> 25
+26 [ label="ColorLiteral\nMeggy.Color.BLUE" ];
+23 -> 26
+27 [ label="ArrayAssignStatement" ];
+6 -> 27
+28 [ label="IdLiteral\ncolors" ];
+27 -> 28
+29 [ label="IntLiteral\n2" ];
+27 -> 29
+30 [ label="ColorLiteral\nMeggy.Color.BLUE" ];
+27 -> 30
+31 [ label="ArrayAssignStatement" ];
+6 -> 31
+32 [ label="IdLiteral\ncolors" ];
+31 -> 32
+33 [ label="IntLiteral\n3" ];
+31 -> 33
+34 [ label="ColorLiteral\nMeggy.Color.WHITE" ];
+31 -> 34
+35 [ label="ArrayAssignStatement" ];
+6 -> 35
+36 [ label="IdLiteral\ncolors" ];
+35 -> 36
+37 [ label="IntLiteral\n4" ];
+35 -> 37
+38 [ label="ColorLiteral\nMeggy.Color.YELLOW" ];
+35 -> 38
+39 [ label="ArrayAssignStatement" ];
+6 -> 39
+40 [ label="IdLiteral\ncolors" ];
+39 -> 40
+41 [ label="IntLiteral\n5" ];
+39 -> 41
+42 [ label="ColorLiteral\nMeggy.Color.BLUE" ];
+39 -> 42
+43 [ label="ArrayAssignStatement" ];
+6 -> 43
+44 [ label="IdLiteral\ncolors" ];
+43 -> 44
+45 [ label="IntLiteral\n6" ];
+43 -> 45
+46 [ label="ColorLiteral\nMeggy.Color.ORANGE" ];
+43 -> 46
+47 [ label="WhileStatement" ];
+6 -> 47
+48 [ label="LtExp" ];
+47 -> 48
+49 [ label="IdLiteral\ni" ];
+48 -> 49
+50 [ label="LengthExp" ];
+48 -> 50
+51 [ label="IdLiteral\ncolors" ];
+50 -> 51
+52 [ label="BlockStatement" ];
+47 -> 52
+53 [ label="MeggySetPixel" ];
+52 -> 53
+54 [ label="IdLiteral\ni" ];
+53 -> 54
+55 [ label="IdLiteral\ni" ];
+53 -> 55
+56 [ label="ArrayExp" ];
+53 -> 56
+57 [ label="IdLiteral\ncolors" ];
+56 -> 57
+58 [ label="IdLiteral\ni" ];
+56 -> 58
+59 [ label="AssignStatement" ];
+52 -> 59
+60 [ label="ByteCast" ];
+59 -> 60
+61 [ label="PlusExp" ];
+60 -> 61
+62 [ label="IdLiteral\ni" ];
+61 -> 62
+63 [ label="IntLiteral\n1" ];
+61 -> 63
+}
